@@ -34,57 +34,7 @@
     
     test = true;
     random = 0;
-    // pixelSpeed:
-    //      1: slow
-    //      2: moderate
-    //      3: fast
-    //      4: very fast
-    //      5: ultra fast
-    //      6: dizzily fast
-    //      7: crazily fast
-    //      8: unbeatably fast
-    //      9: no-commently fast
-    //      10+: legendary
-    //      50: you-see-8-enemy fast
-    //      100: you-see-4-enemy fast
-    //      1000: blinking fast
-    //
-    // Sets that work:
-    //      [0.01, 0.01, 1, 2]      (qualified)
-    //      [0.01, 0.01, 1, 3]      (qualified)
-    //      [0.01, 0.01, 1, 4]
-    //      [0.01, 0.01, 1, x]      (x > 4)
-    //      [0.01, 0.01, 2, 1]
-    //      [0.01, 0.01, 2, 3]
-    //      [0.01, 0.01, 2, 4]
-    //      [0.01, 0.01, 2, 5]
-    //      [0.01, 0.01, 2, x]      (x > 5)
-    //      [0.01, 0.01, 3, 1]
-    //      [0.01, 0.01, 3, 2]      (qualified)
-    //      [0.01, 0.01, 3, 4]
-    //      [0.01, 0.01, 3, x]      (x > 4)
-    //      [0.01, 0.01, q, x]      (q is different from x)
     
-    //      [0.02, 0.01, 1, 2]
-    //      [0.05, 0.05, 2, 3]      (but not as smoooth as 0.01)
-    
-    // Don't work:
-    //      [0.01, 0.01, 1, 1]
-    //      [0.01, 0.01, 2, 2]
-    //      [0.01, 0.01, 3, 3]
-    //      [0.01, 0.01, q, x]      (q = x)
-    
-    //      [0.01, 0.02, 1, 1]
-    //      [0.01, 0.02, 1, 2]
-    //      [0.01, 0.02, 1, 3]
-    //      [0.01, 0.02, 1, x]      (x > 3)
-    
-    //      [0.02, 0.01, 3, 2]
-    
-    //      [0.02, 0.02, 1, x]      (x > 0)
-    //      [0.02, 0.02, 2, x]      (x > 0)
-    //      [0.02, 0.02, 3, x]      (x > 0)
-    //      [0.02, 0.02, q, x]      (q > 0, x > 0)
     animateDurationCharacter = 0.01;
     animateDurationEnemy = 0.01;
     pixelSpeed = 2;
@@ -188,26 +138,17 @@
     [mainView addSubview:enemy];
 }
 
-/*
- * Your work
- */
 - (IBAction)moveUp:(id)sender
 {
     isMovingUp = true;
     [self moveUpRecursively];
 }
 
-/*
- * Your work
- */
 - (IBAction)moveUpCancel:(id)sender
 {
     isMovingUp = false;
 }
 
-/*
- * Your work
- */
 - (void)moveUpRecursively
 {
     y = y - 2;
@@ -248,26 +189,17 @@
     
 }
 
-/*
- * Already implemented
- */
 - (IBAction)moveDown:(id)sender
 {
     isMovingDown = true;
     [self moveDownRecursively];
 }
 
-/*
- * Already implemented
- */
 - (IBAction)moveDownCancel:(id)sender
 {
     isMovingDown = false;
 }
 
-/*
- * Already implemented
- */
 - (void)moveDownRecursively
 {
     y = y + 2;
@@ -280,24 +212,16 @@
         }
     }
     
-    [UIView animateWithDuration:animateDurationCharacter animations:^ { // Play around with duration to create a 'smooth' effect
-        //if (character.center.y <= 340) { // Character is within 'center range'
-        //    centerY = centerY + 2;
-        //    character.center = CGPointMake(centerX, centerY);
-        //} else {
-            // Update position of ALL objects
+    [UIView animateWithDuration:animateDurationCharacter animations:^ {
         yTree -= pixelSpeed;
         yHouse -= pixelSpeed;
         yEnemy -= pixelSpeed;
         
-            // Note: We could make it more efficient, only draw objects that are on the screen, or about to appear on the screen
-            tree.center = CGPointMake(xTree, yTree);
-            house.center = CGPointMake(xHouse, yHouse);
-        //enemy.center = CGPointMake(xEnemy, yEnemy);
-        //}
+	// Note: We could make it more efficient, only draw objects that are on the screen, or about to appear on the screen
+	tree.center = CGPointMake(xTree, yTree);
+	house.center = CGPointMake(xHouse, yHouse);
         [character setImage:[imagesWalkingDown objectAtIndex:indexDown]];
         //character.center = CGPointMake(x + 20, y + 20);
-        
         
     } completion:^(BOOL finished) {
         if (isMovingDown) {
@@ -306,18 +230,12 @@
     }];
 }
 
-/*
- * Your work
- */
 - (IBAction)moveLeft:(id)sender
 {
     isMovingLeft = true;
     [self moveLeftRecursively];
 }
 
-/*
- * Your work
- */
 - (IBAction)moveLeftCancel:(id)sender
 {
     isMovingLeft = false;
@@ -335,11 +253,7 @@
         }
     }
     
-    [UIView animateWithDuration:animateDurationCharacter animations:^ { // Play around with duration to create a 'smooth' effect
-        //if (character.center.x >= 110) { // Character is within 'center range'
-        //    centerX = centerX - 2;
-        //    character.center = CGPointMake(centerX, centerY);
-        //} else {
+    [UIView animateWithDuration:animateDurationCharacter animations:^ {
         // Update position of ALL objects
         xTree += pixelSpeed;
         xHouse += pixelSpeed;
@@ -348,11 +262,8 @@
         // Note: We could make it more efficient, only draw objects that are on the screen, or about to appear on the screen
         tree.center = CGPointMake(xTree, yTree);
         house.center = CGPointMake(xHouse, yHouse);
-        //enemy.center = CGPointMake(xEnemy, yEnemy);
-        //}
         [character setImage:[imagesWalkingLeft objectAtIndex:indexLeft]];
-        //character.center = CGPointMake(x, y);
-        
+        //character.center = CGPointMake(x, y); 
         
     } completion:^(BOOL finished) {
         if (isMovingLeft) {
@@ -361,26 +272,17 @@
     }];
 }
 
-/*
- * Your work
- */
 - (IBAction)moveRight:(id)sender
 {
     isMovingRight = true;
     [self moveRightRecursively];
 }
 
-/*
- * Your work
- */
 - (IBAction)moveRightCancel:(id)sender
 {
     isMovingRight = false;
 }
 
-/*
- * Your work
- */
 - (void)moveRightRecursively
 {
     x = x + 2;
@@ -393,12 +295,7 @@
         }
     }
     
-    [UIView animateWithDuration:animateDurationCharacter animations:^ { // Play around with duration to create a 'smooth' effect
-        //if (character.center.x <= 200) { // Character is within 'center range'
-        //    centerX = centerX + 2;
-        //    character.center = CGPointMake(centerX, centerY);
-        //} else {
-        // Update position of ALL objects
+    [UIView animateWithDuration:animateDurationCharacter animations:^ {
         xTree -= pixelSpeed;
         xHouse -= pixelSpeed;
         xEnemy -= pixelSpeed;
@@ -406,8 +303,6 @@
         // Note: We could make it more efficient, only draw objects that are on the screen, or about to appear on the screen
         tree.center = CGPointMake(xTree, yTree);
         house.center = CGPointMake(xHouse, yHouse);
-        //enemy.center = CGPointMake(xEnemy, yEnemy);
-        //}
         [character setImage:[imagesWalkingRight objectAtIndex:indexRight]];
         
     } completion:^(BOOL finished) {
@@ -421,9 +316,6 @@
     
 }
 
-/*
- * Enemy thread method
- */
 - (void)whatdoesthefoxsay {
     //[NSThread detachNewThreadSelector:@selector(hiccup) toTarget:self withObject:nil];
     
@@ -432,13 +324,9 @@
             NSLog(@"%d", test);
             test = false; // lock
             
-            //int random = arc4random() % 4; // Value picked randomly (0, 1, 2, 3)
             NSLog(@"%d", random);
-            //sleep(1);
             
             if (random == 3) { // enemy moves up
-                //limit = arc4random() % 20 + 10;
-                
                 limit = 100;
                 [self performSelectorOnMainThread:@selector(enemyMoveUpRecursively) withObject:nil waitUntilDone:NO];
                 
@@ -459,7 +347,6 @@
 
             }
             NSLog(@"xEnemy: %d, yEnemy: %d", xEnemy, yEnemy);
-            //[self performSelectorOnMainThread:@selector(animateEnemyPosition) withObject:nil waitUntilDone:NO];
             
             random++;
             if (random == 4) random = 0;
@@ -469,8 +356,7 @@
 
 - (void)enemyMoveUpRecursively
 {
-    //NSLog(@"aa");
-    [UIView animateWithDuration:animateDurationEnemy animations:^ { // Play around with duration to create a 'smooth' effect
+    [UIView animateWithDuration:animateDurationEnemy animations:^ {
         yEnemy -= objectPixelSpeed;
         limit -= objectPixelSpeed;
         enemy.center = CGPointMake(xEnemy, yEnemy);
@@ -486,8 +372,7 @@
 
 - (void)enemyMoveDownRecursively
 {
-    //NSLog(@"aa");
-    [UIView animateWithDuration:animateDurationEnemy animations:^ { // Play around with duration to create a 'smooth' effect
+    [UIView animateWithDuration:animateDurationEnemy animations:^ {
         yEnemy += objectPixelSpeed;
         limit -= objectPixelSpeed;
         enemy.center = CGPointMake(xEnemy, yEnemy);
@@ -503,8 +388,7 @@
 
 - (void)enemyMoveLeftRecursively
 {
-    //NSLog(@"aa");
-    [UIView animateWithDuration:animateDurationEnemy animations:^ { // Play around with duration to create a 'smooth' effect
+    [UIView animateWithDuration:animateDurationEnemy animations:^ {
         xEnemy -= objectPixelSpeed;
         limit -= objectPixelSpeed;
         enemy.center = CGPointMake(xEnemy, yEnemy);
@@ -512,7 +396,7 @@
         if (limit > 0) {
             [self enemyMoveLeftRecursively];
         } else {
-            test = true; // release lock
+            test = true;
             
         }
     }];
@@ -520,8 +404,7 @@
 
 - (void)enemyMoveRightRecursively
 {
-    //NSLog(@"aa");
-    [UIView animateWithDuration:animateDurationEnemy animations:^ { // Play around with duration to create a 'smooth' effect
+    [UIView animateWithDuration:animateDurationEnemy animations:^ {
         xEnemy += objectPixelSpeed;
         limit -= objectPixelSpeed;
         enemy.center = CGPointMake(xEnemy, yEnemy);

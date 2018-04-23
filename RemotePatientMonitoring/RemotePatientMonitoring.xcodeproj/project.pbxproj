@@ -1,0 +1,559 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FB2BA79D184E9B13006B5172 /* FeedbackView.m in Sources */ = {isa = PBXBuildFile; fileRef = FB2BA79C184E9B13006B5172 /* FeedbackView.m */; };
+		FB5BF051183569EF00BF7E34 /* Question.m in Sources */ = {isa = PBXBuildFile; fileRef = FB5BF050183569EF00BF7E34 /* Question.m */; };
+		FB69536318417CBC00898B4B /* SessionView.m in Sources */ = {isa = PBXBuildFile; fileRef = FB69536218417CBC00898B4B /* SessionView.m */; };
+		FB871B69183C33CA00FC1E45 /* PatientInfoView.m in Sources */ = {isa = PBXBuildFile; fileRef = FB871B68183C33CA00FC1E45 /* PatientInfoView.m */; };
+		FB871B6C183C57CE00FC1E45 /* ConnectDeviceView.m in Sources */ = {isa = PBXBuildFile; fileRef = FB871B6B183C57CE00FC1E45 /* ConnectDeviceView.m */; };
+		FB871B70183C735300FC1E45 /* checkmark.png in Resources */ = {isa = PBXBuildFile; fileRef = FB871B6F183C735300FC1E45 /* checkmark.png */; };
+		FB93B10118EDC5ED00F05166 /* Config.m in Sources */ = {isa = PBXBuildFile; fileRef = FB93B10018EDC5ED00F05166 /* Config.m */; };
+		FBA41D871854074100C94720 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBA41D861854074100C94720 /* CoreBluetooth.framework */; };
+		FBA41D8A18543D7B00C94720 /* HeartRateRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA41D8918543D7B00C94720 /* HeartRateRecord.m */; };
+		FBA4C2D4185919A700FEAA0B /* green-gradient.png in Resources */ = {isa = PBXBuildFile; fileRef = FBA4C2D3185919A700FEAA0B /* green-gradient.png */; };
+		FBA4C2D718592CDC00FEAA0B /* Patient.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA4C2D618592CDC00FEAA0B /* Patient.m */; };
+		FBAAD5C5183C840D00F75FE9 /* xmark.png in Resources */ = {isa = PBXBuildFile; fileRef = FBAAD5C4183C840D00F75FE9 /* xmark.png */; };
+		FBB6C1321841976C009B596E /* heart1.gif in Resources */ = {isa = PBXBuildFile; fileRef = FBB6C12D1841976C009B596E /* heart1.gif */; };
+		FBB6C1331841976C009B596E /* heart2.gif in Resources */ = {isa = PBXBuildFile; fileRef = FBB6C12E1841976C009B596E /* heart2.gif */; };
+		FBB6C1341841976C009B596E /* heart3.gif in Resources */ = {isa = PBXBuildFile; fileRef = FBB6C12F1841976C009B596E /* heart3.gif */; };
+		FBB6C1351841976C009B596E /* heart4.gif in Resources */ = {isa = PBXBuildFile; fileRef = FBB6C1301841976C009B596E /* heart4.gif */; };
+		FBB6C1361841976C009B596E /* heart5.gif in Resources */ = {isa = PBXBuildFile; fileRef = FBB6C1311841976C009B596E /* heart5.gif */; };
+		FBF68C2318282D32000CE432 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBF68C2218282D32000CE432 /* UIKit.framework */; };
+		FBF68C2518282D32000CE432 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBF68C2418282D32000CE432 /* Foundation.framework */; };
+		FBF68C2718282D32000CE432 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBF68C2618282D32000CE432 /* CoreGraphics.framework */; };
+		FBF68C2D18282D32000CE432 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FBF68C2B18282D32000CE432 /* InfoPlist.strings */; };
+		FBF68C2F18282D32000CE432 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FBF68C2E18282D32000CE432 /* main.m */; };
+		FBF68C3318282D32000CE432 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FBF68C3218282D32000CE432 /* AppDelegate.m */; };
+		FBF68C3518282D32000CE432 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = FBF68C3418282D32000CE432 /* Default.png */; };
+		FBF68C3718282D32000CE432 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FBF68C3618282D32000CE432 /* Default@2x.png */; };
+		FBF68C3918282D32000CE432 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FBF68C3818282D32000CE432 /* Default-568h@2x.png */; };
+		FBF68C4118282D32000CE432 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBF68C4018282D32000CE432 /* SenTestingKit.framework */; };
+		FBF68C4218282D32000CE432 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBF68C2218282D32000CE432 /* UIKit.framework */; };
+		FBF68C4318282D32000CE432 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBF68C2418282D32000CE432 /* Foundation.framework */; };
+		FBF68C4B18282D32000CE432 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FBF68C4918282D32000CE432 /* InfoPlist.strings */; };
+		FBF68C4E18282D32000CE432 /* RemotePatientMonitoringTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FBF68C4D18282D32000CE432 /* RemotePatientMonitoringTests.m */; };
+		FBF68C5918282D7B000CE432 /* ExerciseFinishedView.m in Sources */ = {isa = PBXBuildFile; fileRef = FBF68C5818282D7B000CE432 /* ExerciseFinishedView.m */; };
+		FBF68C5C18282DE4000CE432 /* SurveyView.m in Sources */ = {isa = PBXBuildFile; fileRef = FBF68C5B18282DE4000CE432 /* SurveyView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FBF68C4418282D32000CE432 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FBF68C1718282D32000CE432 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FBF68C1E18282D32000CE432;
+			remoteInfo = RemotePatientMonitoring;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FB2BA79B184E9B13006B5172 /* FeedbackView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedbackView.h; sourceTree = "<group>"; };
+		FB2BA79C184E9B13006B5172 /* FeedbackView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedbackView.m; sourceTree = "<group>"; };
+		FB5BF04F183569EF00BF7E34 /* Question.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Question.h; sourceTree = "<group>"; };
+		FB5BF050183569EF00BF7E34 /* Question.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Question.m; sourceTree = "<group>"; };
+		FB69536118417CBC00898B4B /* SessionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SessionView.h; sourceTree = "<group>"; };
+		FB69536218417CBC00898B4B /* SessionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SessionView.m; sourceTree = "<group>"; };
+		FB871B67183C33CA00FC1E45 /* PatientInfoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PatientInfoView.h; sourceTree = "<group>"; };
+		FB871B68183C33CA00FC1E45 /* PatientInfoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PatientInfoView.m; sourceTree = "<group>"; };
+		FB871B6A183C57CE00FC1E45 /* ConnectDeviceView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConnectDeviceView.h; sourceTree = "<group>"; };
+		FB871B6B183C57CE00FC1E45 /* ConnectDeviceView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConnectDeviceView.m; sourceTree = "<group>"; };
+		FB871B6F183C735300FC1E45 /* checkmark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = checkmark.png; sourceTree = "<group>"; };
+		FB93B0FF18EDC5ED00F05166 /* Config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Config.h; sourceTree = "<group>"; };
+		FB93B10018EDC5ED00F05166 /* Config.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Config.m; sourceTree = "<group>"; };
+		FBA41D861854074100C94720 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		FBA41D8818543D7B00C94720 /* HeartRateRecord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeartRateRecord.h; sourceTree = "<group>"; };
+		FBA41D8918543D7B00C94720 /* HeartRateRecord.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeartRateRecord.m; sourceTree = "<group>"; };
+		FBA4C2D3185919A700FEAA0B /* green-gradient.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "green-gradient.png"; sourceTree = "<group>"; };
+		FBA4C2D518592CDC00FEAA0B /* Patient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Patient.h; sourceTree = "<group>"; };
+		FBA4C2D618592CDC00FEAA0B /* Patient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Patient.m; sourceTree = "<group>"; };
+		FBAAD5C4183C840D00F75FE9 /* xmark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = xmark.png; sourceTree = "<group>"; };
+		FBB6C12D1841976C009B596E /* heart1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = heart1.gif; sourceTree = "<group>"; };
+		FBB6C12E1841976C009B596E /* heart2.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = heart2.gif; sourceTree = "<group>"; };
+		FBB6C12F1841976C009B596E /* heart3.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = heart3.gif; sourceTree = "<group>"; };
+		FBB6C1301841976C009B596E /* heart4.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = heart4.gif; sourceTree = "<group>"; };
+		FBB6C1311841976C009B596E /* heart5.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = heart5.gif; sourceTree = "<group>"; };
+		FBF68C1F18282D32000CE432 /* RemotePatientMonitoring.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RemotePatientMonitoring.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBF68C2218282D32000CE432 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		FBF68C2418282D32000CE432 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		FBF68C2618282D32000CE432 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		FBF68C2A18282D32000CE432 /* RemotePatientMonitoring-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RemotePatientMonitoring-Info.plist"; sourceTree = "<group>"; };
+		FBF68C2C18282D32000CE432 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		FBF68C2E18282D32000CE432 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FBF68C3018282D32000CE432 /* RemotePatientMonitoring-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RemotePatientMonitoring-Prefix.pch"; sourceTree = "<group>"; };
+		FBF68C3118282D32000CE432 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		FBF68C3218282D32000CE432 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		FBF68C3418282D32000CE432 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		FBF68C3618282D32000CE432 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		FBF68C3818282D32000CE432 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		FBF68C3F18282D32000CE432 /* RemotePatientMonitoringTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RemotePatientMonitoringTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBF68C4018282D32000CE432 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		FBF68C4818282D32000CE432 /* RemotePatientMonitoringTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RemotePatientMonitoringTests-Info.plist"; sourceTree = "<group>"; };
+		FBF68C4A18282D32000CE432 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		FBF68C4C18282D32000CE432 /* RemotePatientMonitoringTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RemotePatientMonitoringTests.h; sourceTree = "<group>"; };
+		FBF68C4D18282D32000CE432 /* RemotePatientMonitoringTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RemotePatientMonitoringTests.m; sourceTree = "<group>"; };
+		FBF68C5718282D7B000CE432 /* ExerciseFinishedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExerciseFinishedView.h; sourceTree = "<group>"; };
+		FBF68C5818282D7B000CE432 /* ExerciseFinishedView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExerciseFinishedView.m; sourceTree = "<group>"; };
+		FBF68C5A18282DE4000CE432 /* SurveyView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SurveyView.h; sourceTree = "<group>"; };
+		FBF68C5B18282DE4000CE432 /* SurveyView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SurveyView.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FBF68C1C18282D32000CE432 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBA41D871854074100C94720 /* CoreBluetooth.framework in Frameworks */,
+				FBF68C2318282D32000CE432 /* UIKit.framework in Frameworks */,
+				FBF68C2518282D32000CE432 /* Foundation.framework in Frameworks */,
+				FBF68C2718282D32000CE432 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBF68C3B18282D32000CE432 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBF68C4118282D32000CE432 /* SenTestingKit.framework in Frameworks */,
+				FBF68C4218282D32000CE432 /* UIKit.framework in Frameworks */,
+				FBF68C4318282D32000CE432 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FBF68C1618282D32000CE432 = {
+			isa = PBXGroup;
+			children = (
+				FBF68C2818282D32000CE432 /* RemotePatientMonitoring */,
+				FBF68C4618282D32000CE432 /* RemotePatientMonitoringTests */,
+				FBF68C2118282D32000CE432 /* Frameworks */,
+				FBF68C2018282D32000CE432 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FBF68C2018282D32000CE432 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FBF68C1F18282D32000CE432 /* RemotePatientMonitoring.app */,
+				FBF68C3F18282D32000CE432 /* RemotePatientMonitoringTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FBF68C2118282D32000CE432 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FBA41D861854074100C94720 /* CoreBluetooth.framework */,
+				FBF68C2218282D32000CE432 /* UIKit.framework */,
+				FBF68C2418282D32000CE432 /* Foundation.framework */,
+				FBF68C2618282D32000CE432 /* CoreGraphics.framework */,
+				FBF68C4018282D32000CE432 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FBF68C2818282D32000CE432 /* RemotePatientMonitoring */ = {
+			isa = PBXGroup;
+			children = (
+				FBA4C2D3185919A700FEAA0B /* green-gradient.png */,
+				FBAAD5C4183C840D00F75FE9 /* xmark.png */,
+				FB871B6F183C735300FC1E45 /* checkmark.png */,
+				FBB6C12D1841976C009B596E /* heart1.gif */,
+				FBB6C12E1841976C009B596E /* heart2.gif */,
+				FBB6C12F1841976C009B596E /* heart3.gif */,
+				FBB6C1301841976C009B596E /* heart4.gif */,
+				FBB6C1311841976C009B596E /* heart5.gif */,
+				FB93B0FF18EDC5ED00F05166 /* Config.h */,
+				FB93B10018EDC5ED00F05166 /* Config.m */,
+				FBF68C3118282D32000CE432 /* AppDelegate.h */,
+				FBF68C3218282D32000CE432 /* AppDelegate.m */,
+				FB871B67183C33CA00FC1E45 /* PatientInfoView.h */,
+				FB871B68183C33CA00FC1E45 /* PatientInfoView.m */,
+				FB871B6A183C57CE00FC1E45 /* ConnectDeviceView.h */,
+				FB871B6B183C57CE00FC1E45 /* ConnectDeviceView.m */,
+				FB69536118417CBC00898B4B /* SessionView.h */,
+				FB69536218417CBC00898B4B /* SessionView.m */,
+				FBF68C5718282D7B000CE432 /* ExerciseFinishedView.h */,
+				FBF68C5818282D7B000CE432 /* ExerciseFinishedView.m */,
+				FBF68C5A18282DE4000CE432 /* SurveyView.h */,
+				FBF68C5B18282DE4000CE432 /* SurveyView.m */,
+				FB2BA79B184E9B13006B5172 /* FeedbackView.h */,
+				FB2BA79C184E9B13006B5172 /* FeedbackView.m */,
+				FBA4C2D518592CDC00FEAA0B /* Patient.h */,
+				FBA4C2D618592CDC00FEAA0B /* Patient.m */,
+				FB5BF04F183569EF00BF7E34 /* Question.h */,
+				FB5BF050183569EF00BF7E34 /* Question.m */,
+				FBA41D8818543D7B00C94720 /* HeartRateRecord.h */,
+				FBA41D8918543D7B00C94720 /* HeartRateRecord.m */,
+				FBF68C2918282D32000CE432 /* Supporting Files */,
+			);
+			path = RemotePatientMonitoring;
+			sourceTree = "<group>";
+		};
+		FBF68C2918282D32000CE432 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FBF68C2A18282D32000CE432 /* RemotePatientMonitoring-Info.plist */,
+				FBF68C2B18282D32000CE432 /* InfoPlist.strings */,
+				FBF68C2E18282D32000CE432 /* main.m */,
+				FBF68C3018282D32000CE432 /* RemotePatientMonitoring-Prefix.pch */,
+				FBF68C3418282D32000CE432 /* Default.png */,
+				FBF68C3618282D32000CE432 /* Default@2x.png */,
+				FBF68C3818282D32000CE432 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FBF68C4618282D32000CE432 /* RemotePatientMonitoringTests */ = {
+			isa = PBXGroup;
+			children = (
+				FBF68C4C18282D32000CE432 /* RemotePatientMonitoringTests.h */,
+				FBF68C4D18282D32000CE432 /* RemotePatientMonitoringTests.m */,
+				FBF68C4718282D32000CE432 /* Supporting Files */,
+			);
+			path = RemotePatientMonitoringTests;
+			sourceTree = "<group>";
+		};
+		FBF68C4718282D32000CE432 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FBF68C4818282D32000CE432 /* RemotePatientMonitoringTests-Info.plist */,
+				FBF68C4918282D32000CE432 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FBF68C1E18282D32000CE432 /* RemotePatientMonitoring */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FBF68C5118282D32000CE432 /* Build configuration list for PBXNativeTarget "RemotePatientMonitoring" */;
+			buildPhases = (
+				FBF68C1B18282D32000CE432 /* Sources */,
+				FBF68C1C18282D32000CE432 /* Frameworks */,
+				FBF68C1D18282D32000CE432 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RemotePatientMonitoring;
+			productName = RemotePatientMonitoring;
+			productReference = FBF68C1F18282D32000CE432 /* RemotePatientMonitoring.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FBF68C3E18282D32000CE432 /* RemotePatientMonitoringTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FBF68C5418282D32000CE432 /* Build configuration list for PBXNativeTarget "RemotePatientMonitoringTests" */;
+			buildPhases = (
+				FBF68C3A18282D32000CE432 /* Sources */,
+				FBF68C3B18282D32000CE432 /* Frameworks */,
+				FBF68C3C18282D32000CE432 /* Resources */,
+				FBF68C3D18282D32000CE432 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FBF68C4518282D32000CE432 /* PBXTargetDependency */,
+			);
+			name = RemotePatientMonitoringTests;
+			productName = RemotePatientMonitoringTests;
+			productReference = FBF68C3F18282D32000CE432 /* RemotePatientMonitoringTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FBF68C1718282D32000CE432 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Dat Phan";
+				TargetAttributes = {
+					FBF68C1E18282D32000CE432 = {
+						DevelopmentTeam = QJ47LP8648;
+					};
+				};
+			};
+			buildConfigurationList = FBF68C1A18282D32000CE432 /* Build configuration list for PBXProject "RemotePatientMonitoring" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = FBF68C1618282D32000CE432;
+			productRefGroup = FBF68C2018282D32000CE432 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FBF68C1E18282D32000CE432 /* RemotePatientMonitoring */,
+				FBF68C3E18282D32000CE432 /* RemotePatientMonitoringTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FBF68C1D18282D32000CE432 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBF68C2D18282D32000CE432 /* InfoPlist.strings in Resources */,
+				FBA4C2D4185919A700FEAA0B /* green-gradient.png in Resources */,
+				FBF68C3518282D32000CE432 /* Default.png in Resources */,
+				FBF68C3718282D32000CE432 /* Default@2x.png in Resources */,
+				FBF68C3918282D32000CE432 /* Default-568h@2x.png in Resources */,
+				FB871B70183C735300FC1E45 /* checkmark.png in Resources */,
+				FBAAD5C5183C840D00F75FE9 /* xmark.png in Resources */,
+				FBB6C1321841976C009B596E /* heart1.gif in Resources */,
+				FBB6C1331841976C009B596E /* heart2.gif in Resources */,
+				FBB6C1341841976C009B596E /* heart3.gif in Resources */,
+				FBB6C1351841976C009B596E /* heart4.gif in Resources */,
+				FBB6C1361841976C009B596E /* heart5.gif in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBF68C3C18282D32000CE432 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBF68C4B18282D32000CE432 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		FBF68C3D18282D32000CE432 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FBF68C1B18282D32000CE432 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBF68C2F18282D32000CE432 /* main.m in Sources */,
+				FB93B10118EDC5ED00F05166 /* Config.m in Sources */,
+				FBF68C3318282D32000CE432 /* AppDelegate.m in Sources */,
+				FBF68C5918282D7B000CE432 /* ExerciseFinishedView.m in Sources */,
+				FBF68C5C18282DE4000CE432 /* SurveyView.m in Sources */,
+				FBA4C2D718592CDC00FEAA0B /* Patient.m in Sources */,
+				FB2BA79D184E9B13006B5172 /* FeedbackView.m in Sources */,
+				FB5BF051183569EF00BF7E34 /* Question.m in Sources */,
+				FB871B69183C33CA00FC1E45 /* PatientInfoView.m in Sources */,
+				FB871B6C183C57CE00FC1E45 /* ConnectDeviceView.m in Sources */,
+				FB69536318417CBC00898B4B /* SessionView.m in Sources */,
+				FBA41D8A18543D7B00C94720 /* HeartRateRecord.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBF68C3A18282D32000CE432 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBF68C4E18282D32000CE432 /* RemotePatientMonitoringTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FBF68C4518282D32000CE432 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FBF68C1E18282D32000CE432 /* RemotePatientMonitoring */;
+			targetProxy = FBF68C4418282D32000CE432 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FBF68C2B18282D32000CE432 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FBF68C2C18282D32000CE432 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		FBF68C4918282D32000CE432 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FBF68C4A18282D32000CE432 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FBF68C4F18282D32000CE432 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		FBF68C5018282D32000CE432 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FBF68C5218282D32000CE432 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RemotePatientMonitoring/RemotePatientMonitoring-Prefix.pch";
+				INFOPLIST_FILE = "RemotePatientMonitoring/RemotePatientMonitoring-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		FBF68C5318282D32000CE432 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RemotePatientMonitoring/RemotePatientMonitoring-Prefix.pch";
+				INFOPLIST_FILE = "RemotePatientMonitoring/RemotePatientMonitoring-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		FBF68C5518282D32000CE432 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/RemotePatientMonitoring.app/RemotePatientMonitoring";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RemotePatientMonitoring/RemotePatientMonitoring-Prefix.pch";
+				INFOPLIST_FILE = "RemotePatientMonitoringTests/RemotePatientMonitoringTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		FBF68C5618282D32000CE432 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/RemotePatientMonitoring.app/RemotePatientMonitoring";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RemotePatientMonitoring/RemotePatientMonitoring-Prefix.pch";
+				INFOPLIST_FILE = "RemotePatientMonitoringTests/RemotePatientMonitoringTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FBF68C1A18282D32000CE432 /* Build configuration list for PBXProject "RemotePatientMonitoring" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FBF68C4F18282D32000CE432 /* Debug */,
+				FBF68C5018282D32000CE432 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FBF68C5118282D32000CE432 /* Build configuration list for PBXNativeTarget "RemotePatientMonitoring" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FBF68C5218282D32000CE432 /* Debug */,
+				FBF68C5318282D32000CE432 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FBF68C5418282D32000CE432 /* Build configuration list for PBXNativeTarget "RemotePatientMonitoringTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FBF68C5518282D32000CE432 /* Debug */,
+				FBF68C5618282D32000CE432 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FBF68C1718282D32000CE432 /* Project object */;
+}
